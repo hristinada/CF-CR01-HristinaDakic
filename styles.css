@@ -9,10 +9,10 @@ header {
 	background-color: #f2f2f2;
 }
 
-#name {
-	float:right;
-	margin-top: 35px;
-	font-size: 20px;
+span {
+	position: relative; /*in order to be able to move it set margins*/
+	bottom: 20px;
+	font-size: 25px;
 	font-weight: bold;
 	color: #3D3E3E;
 }
@@ -41,7 +41,7 @@ h1 {
 	color: #303030;
 	text-align: center;
 	font-size: 60px;
-	padding: 10%;
+	padding: 5%;
 	font-family: 'Permanent Marker', cursive;
 }
 
@@ -53,6 +53,10 @@ h2 {
 	padding: 1%;
 }
 
+h3 {
+	font-weight: bold;
+}
+
 #mainsection {
 	display: flex;
 	justify-content: center;
@@ -60,7 +64,7 @@ h2 {
 	flex-wrap: wrap;
 }
 
-#mainsection .section {
+.section {
 	display: flex; 
 	flex-basis: calc(50% - 40px); 
 	flex-direction: column;
@@ -72,6 +76,12 @@ hr {
 
 footer {
 	text-align: center;
+}
+
+.img {
+	width: 50%;
+	height: 40%;
+	object-fit: scale-down;
 }
 
 
