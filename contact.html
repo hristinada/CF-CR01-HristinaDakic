@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Pacifico&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+		body {
+			background-color: #978484;
+			font-family: 'IBM Plex Sans', sans-serif;
+			margin: 0; /*remove the default margin*/
+			padding: 0 5% 0 5%; /*padding top, right, botom, left*/
+		}
+
+		h1 {
+			font-size: 50px;
+			font-weight: bold;
+		}
+		
+		ul {
+			padding: 1%;
+			background-color: #653D3C;
+		}
+		
+		ul a {
+			list-style-type: none;
+  			text-decoration: none;
+		}
+
+		ul a li {
+			display: inline;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding-right: 1%;
+		}
+
+		.button {
+			color: white;
+			padding: 5px;
+			font-size: 15px;
+			background-color: #653D3C;
+			border-radius: 5px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<ul>
+	  	<a href="index.html"><li>Home</li></a>
+	  	<a href="aboutMe.html"><li>About me</li></a>
+	  	<a href="blog.html"><li>Blog</li></a>
+	</ul>
+
+	<h1>Contact</h1>
+
+	<table>
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" name="firstname" placeholder="First name"></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><input type="text" name="lastname" placeholder="Last name"></td>
+		</tr>
+		<tr>
+			<td>E-mail</td>
+			<td><input type="text" name="email" placeholder="E-mail" required!></td>
+		</tr>
+		<tr>
+			<td>Your message</td>
+			<td><textarea name="message" rows="10" cols="50" placeholder="Please write your message here"></textarea>
+		</tr>
+	</table>
+	
+	<button class="button">SEND</button>
+
+</body>
+</html>
