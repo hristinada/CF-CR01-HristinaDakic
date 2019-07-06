@@ -1,6 +1,6 @@
 body {
 	margin: 0; /*remove the default margin*/
-	padding: 0 5% 0 5%;
+	padding: 0 5% 0 5%; /*padding top, right, botom, left*/
 	font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -41,8 +41,8 @@ h1 {
 	color: #303030;
 	text-align: center;
 	font-size: 60px;
-	padding: 5%;
-	font-family: 'Permanent Marker', cursive;
+	font-weight: bold;
+	padding: 1%;
 }
 
 h2 {
@@ -53,36 +53,51 @@ h2 {
 	padding: 1%;
 }
 
-h3 {
-	font-weight: bold;
+
+.img {			/*sets the size of all img to be the same*/
+	width: 80%;
+	height: 65%;
+	object-fit: cover; /*covers the rest of the picture so it doesn't streach*/
 }
 
-#mainsection {
+h3 {
+	font-weight: bold;
+	font-size: 25px;
+	width: 80%;
+}
+
+#mainsection { 
 	display: flex;
-	justify-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
 .section {
-	display: flex; 
-	flex-basis: calc(50% - 40px); 
-	flex-direction: column;
+	width: 50%; /*to make sure that the whole space of the secion is used*/
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.right h3 { 
+	float: right; /*adjust the right text boxes to be on the right*/
+	text-align: left; /*adjust the text to start from the left*/
 }
 
 hr {
-	 border-width: 3px;
+	background-color: #978484;
+	padding: 3px;
 }
 
 footer {
 	text-align: center;
 }
 
-.img {
-	width: 50%;
-	height: 40%;
-	object-fit: scale-down;
-}
 
 
 
